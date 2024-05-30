@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    position:fixed;
+    bottom: -60px;
+    right: 0;   
+    margin-right: 40px;
+  }
+  
+  .chat-container {
+    
+    /* margin-left: 700px; */
+    width: 330px;
+    max-width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bi-bank2{
+    margin-right: 25px;
+  }
+  .chat-header {
+    height: 30px;
+    font-size: 10px;
+    background: #0057a3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hdfc-logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .chat-container-link{
+    height: 80px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+     margin-bottom: 2px;
+  }
+.chat-container-button{
+   border: solid black 2px;
+   border-radius: 4px;
+    height: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.chat-container-button:hover{
+  background: #0057a3;
+}
+.chat-container-a{
+    font-size: 10px;
+    color:rgb(5, 5, 5);
+}
+  .chat-box {
+    padding: 20px;
+    height: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .bot-message {
+    background: #f1f1f1;
+    align-self: flex-start;
+  }
+  
+  .user-message {
+    background: #0057a3;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  #send-btn {
+    background: #0057a3;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  .bi-bank2{
+   font-size: 30px;
+   
+}
+  .background-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(''); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  .chartbot-icon{
+    text-align: center;
+    font-size: 20px;
+
+  }
+  
+  .chat-container .chat-box,
+  .chat-container .input-container {
+    z-index: 2;
+  }
+  
+  .chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff; /* Adjust color as needed */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+.chatbot-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.chatbot-icon i {
+    font-size: 2em;
+    color: white; /* Adjust color as needed */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chatbot-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chatbot-icon i {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chatbot-icon i {
+        font-size: 1.2em;
+    }
+}
